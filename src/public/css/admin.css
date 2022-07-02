@@ -1,0 +1,253 @@
+.container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container__wraper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.container__headers {
+    width: 310px;
+    height: 600px;
+    background: #267693;
+}
+
+.container__list {
+    list-style-type: none;
+    margin-top: 160px;
+}
+
+.container__items {
+    background: #ebda47;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-left: -30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.container__link {
+    padding: 9px 50px 9px 50px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+
+}
+
+.container__link:hover {
+    color: rgb(247, 245, 240);
+    opacity: 0.7;
+    font-size: 18px;
+}
+
+.container__main {
+    width: 840px;
+    height: 580px;
+    margin-left: 50px;
+}
+
+
+.container__main-wraper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.container__main-button {
+    font-family: "OpenSans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background: linear-gradient(152.13deg, #63E1D9 -150.21%, #34A0CD 170.03%);
+    box-shadow: 2px 3px 6px rgb(0 0 0 / 16%);
+    border-radius: 28px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 30px;
+}
+
+.container__main-hendel {
+    width: 800px;
+    border-radius: 10px;
+    border: 2px solid #3333;
+    margin-bottom: 40px;
+}
+
+.container__main-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 10px 20px;
+    border: 1px solid red;
+    list-style-type: none;
+    background-color: #ebda47;
+}
+
+.container__main-items {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #000000;
+}
+
+.container__center-list {
+    align-items: center;
+    margin-right: 35px;
+    list-style-type: none;
+}
+
+.container__center-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__center {
+    overflow: scroll;
+    height: 400px;
+}
+
+.container__main-title {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ==========================modal======================= */
+
+.course_modal {
+    position: fixed;
+    display: flex;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    background-color: #877731;
+    opacity: 0.9;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    top: 0;
+}
+
+.course__modal__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 10px;
+    background-color: #0b0b0b;
+    /* opacity: 0.9; */
+    margin: 6% auto;
+
+}
+
+.course__modal__title {
+    display: inline;
+    padding: 25px;
+    color: #FFFFFF;
+}
+
+
+.kurs__modal__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.modal__input {
+    margin-bottom: 15px;
+    padding: 15px;
+    max-width: 90%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.modal__btn {
+    margin-bottom: 15px;
+    padding: 15px;
+    max-width: 40%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+.modal {
+    /* display: none; */
+    /* Hidden by default */
+    /* position: fixed; */
+    /* Stay in place */
+    /* z-index: 1; */
+    /* Sit on top */
+    /* left: 0; */
+    /* top: 0; */
+    /* width: 100%; */
+    /* Full width */
+    /* height: 100%; */
+    /* Full height */
+    /* overflow: auto; */
+    /* Enable scroll if needed */
+    /* background-color: rgb(0, 0, 0); */
+    /* Fallback color */
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    /* background-color: #fefefe; */
+    /* margin: 15% auto; */
+    /* 15% from the top and centered */
+    /* padding: 20px; */
+    /* border: 1px solid #888; */
+    /* width: 80%; */
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "nameGroup": "n1",
+        "createdAdd": "010101",
+        "courseName": "smm",
+        "teacher": "adham"
+    },
+    {
+        "id": 2,
+        "nameGroup": "n1",
+        "createdAdd": "010101",
+        "courseName": "moushin",
+        "teacher": "shaxboz"
+    },
+    {
+        "id": 3,
+        "nameGroup": "n44",
+        "createdAdd": "22.02.2022",
+        "courseName": "foundation",
+        "teacher": "odilbek"
+    }
+]

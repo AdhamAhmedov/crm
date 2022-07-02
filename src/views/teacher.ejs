@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/admin.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container__wraper">
+            <div class="container__headers">
+                <ul class="container__list">
+                    <li class="container__items">
+                        <a class="container__link" href="#">O'quvchilar</a>
+                    </li>
+                    <li class="container__items">
+                        <a class="container__link" href="#">Guruhlar</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container__main">
+                <div class="container__main-wraper">
+                    <h1 class="container__main-title">Guruhlar</h1>
+                </div>
+                <hr class="container__main-hendel">
+                <div class="container__center">
+                    <div class="container__center">
+                        <ul class="container__center-list">
+                            <% for(let group of foundGroup) { %>
+                                <li class="container__center-items">
+                                    <p>
+                                        <%= group.nameGroup%>
+                                    </p>
+                                    <p>
+                                        <%= group.courseName%>
+                                    </p>
+                                    <p>
+                                        <%= group.createdAdd%>
+                                    </p>
+                                </li>
+                                <% } %>
+                        </ul>
+                    </div>
+                    <div class="container__center">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

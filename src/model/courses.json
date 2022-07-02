@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "course": "smm",
+        "description": "Smmchilar",
+        "cost": "150 000"
+    },
+    {
+        "id": 2,
+        "course": "web",
+        "description": "sayt yaratuvchilar",
+        "cost": "55555"
+    },
+    {
+        "id": 3,
+        "course": "grafika",
+        "description": "dizaynchilar",
+        "cost": "77777"
+    },
+    {
+        "id": 3,
+        "course": "moushin",
+        "description": "dizaynchilar",
+        "cost": "77777"
+    },
+    {
+        "id": 5,
+        "course": "foundation",
+        "description": "boshlangich kurs",
+        "cost": "5000"
+    }
+]

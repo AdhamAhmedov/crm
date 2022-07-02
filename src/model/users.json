@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "userName": "Alisher",
+        "password": "0101",
+        "phoneNumber": "12345678",
+        "role": "admin"
+    },
+    {
+        "id": 2,
+        "userName": "adham",
+        "password": "0303",
+        "phoneNumber": "8590",
+        "job": "smm",
+        "role": "teacher"
+    },
+    {
+        "id": 3,
+        "userName": "shaxboz",
+        "password": "0404",
+        "phoneNumber": "555555556",
+        "job": "moushin",
+        "role": "teacher"
+    },
+    {
+        "id": 4,
+        "userName": "odilbek",
+        "password": "000",
+        "phoneNumber": "9989947",
+        "job": "web",
+        "role": "teacher"
+    },
+    {
+        "id": 5,
+        "userName": "odilbek",
+        "password": "0707",
+        "phoneNumber": "9998955136",
+        "job": "foundation",
+        "role": "teacher"
+    },
+    {
+        "id": 6,
+        "userName": "jum",
+        "password": "",
+        "phoneNumber": "",
+        "coursName": "smm",
+        "role": "student"
+    },
+    {
+        "id": 7,
+        "userName": "jumavoy",
+        "password": "77777",
+        "phoneNumber": "65565565665",
+        "coursName": "foundation",
+        "role": "student"
+    }
+]

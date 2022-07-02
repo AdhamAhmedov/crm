@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/admin.css">
+    <title>crm</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container__wraper">
+            <div class="container__headers">
+                <ul class="container__list">
+
+                    <li class="container__items">
+                        <a class="container__link" href="/createCourses">Kurslar</a>
+                    </li>
+                    <li class="container__items">
+                        <a class="container__link" href="/createTeacher">O'qituvchi</a>
+                    </li>
+                    <li class="container__items">
+                        <a class="container__link" href="/createGroups">Guruhlar</a>
+                    </li>
+                    <li class="container__items">
+                        <a class="container__link" href="/createStudents">O'quvchilar</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="container__main">
+                <div class="container__main-wraper">
+                    <h1>Guruhlar</h1>
+                    <button id="myBtn" class="container__main-button" type="submit">Guruh qo'shish</button>
+                </div>
+                <hr class="container__main-hendel">
+                <div class="container__main-center">
+                    <div class="container__main-top">
+                        <ul class="container__main-list">
+                            <li class="container__main-items">N</li>
+                            <li class="container__main-items">Ochilgan vaqti</li>
+                            <li class="container__main-items">Yo'nalishi</li>
+                            <li class="container__main-items">O'qituvchisi</li>
+                        </ul>
+                    </div>
+                    <div class="container__center">
+                        <ul class="container__center-list">
+                            <% for(let i of allGroups ) {%>
+                                <li class="container__center-items">
+                                    <p>
+                                        <%=i.nameGroup%>
+                                    </p>
+                                    <p>
+                                        <%= i.createdAdd%>
+                                    </p>
+                                    <p>
+                                        <%= i.courseName%>
+                                    </p>
+                                    <p>
+                                        <%= i.teacher%>
+                                    </p>
+                                </li>
+                                <%}%>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="myModal" class="course_modal">
+                <span class="close">x</span>
+
+                <div class="modal-content course__modal__wrapper">
+
+                    <h3 class="course__modal__title">Guruh qo'shish</h3>
+                    <form action="" enctype="application/x-www-form-urlencoded" method="post" class="kurs__modal__form">
+                        <input class="modal__input" name="nameGroup" required type="text" placeholder="Guruh nomi">
+                        <input class="modal__input" name="createdAdd" required type="data" placeholder="Ochilgan vaqti">
+                        <select name="courseName" class="greatGroup__courseCelect modal__input">
+                            <% allCourses.map(e=>{ %>
+                                <option>
+                                    <%= e.course %>
+                                </option>
+                                <% }) %>
+                        </select>
+                        <select name="teacher" class="teacherCelect modal__input">
+
+                        </select>
+                        <button type="submit" class="modal__btn">Qo'shish</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="gruop.js"></script>
+</body>
+
+</html>
